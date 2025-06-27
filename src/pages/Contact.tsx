@@ -17,18 +17,11 @@ const SERVICES = [
 
 const LOCATIONS = [
   {
-    city: "New York",
-    address: "71890 Champlin Neck",
-    email: "support@domain.com",
-    phone: "(+62) 81 322 1467",
-    hours: "09:00 AM - 22:00 PM",
-  },
-  {
-    city: "Texas",
-    address: "71890 Champlin Neck",
-    email: "support@domain.com",
-    phone: "(+62) 81 322 1467",
-    hours: "09:00 AM - 22:00 PM",
+    city: "Kawan Lama",
+    address: "1st Floor, Lot No 1-001G, Plaza Low Yat, 7, Jalan Bintang, Bukit Bintang, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+    email: "crepair276@gmail.com",
+    phone: "+60 189621486",
+    hours: "10:00 AM - 10:00 PM",
   },
 ];
 
@@ -171,14 +164,13 @@ export default function Contact() {
               <Mail className="w-5 h-5 text-primary" /> Get In Touch
             </span>
             <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2 leading-tight">
-              Visit One Of Our Agency
+              Need Help with Your Phone? Let's Talk!
               <br />
-              Contact Us Today
             </h2>
             <p className="text-gray-600 mb-6">
-              Duis aute irure dolor in repreh enderit in volupt tate cillum
-              dolore eu fugiat nulla dolor atur with Lorem ipsum is simply free
-              market web bites eius mod ut labore duis
+              Whether you have a question, want to book a repair, or need a quick quote—our team is just a call or message away. Reach out today and get your device fixed fast.
+
+
             </p>
             <div className="grid grid-cols-2 gap-6 border-t pt-6">
               {LOCATIONS.map((loc) => (
@@ -219,7 +211,7 @@ export default function Contact() {
         <div className="w-full h-96 rounded-lg overflow-hidden shadow border border-gray-200">
           <iframe
             title="Main Branch Map"
-            src="https://www.google.com/maps?q=3.14389705657959,101.709083557129&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3605.1436865212727!2d101.70650837497114!3d3.143888896831539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMDgnMzguMCJOIDEwMcKwNDInMzIuNyJF!5e1!3m2!1sen!2s!4v1751031273836!5m2!1sen!2s"
             width="100%"
             height="100%"
             allowFullScreen

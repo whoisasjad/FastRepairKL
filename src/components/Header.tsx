@@ -19,18 +19,14 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone size={16} />
-              <span>Emergency - 03-2123-4567</span>
+              <span>+60 189621486</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail size={16} />
-              <span>support@fastrepair.com</span>
+              <span>crepair276@gmail.com</span>
             </div>
           </div>
-          <div className="flex items-center space-x-3">
-            <Facebook size={16} className="hover:text-orange-200 cursor-pointer" />
-            <Twitter size={16} className="hover:text-orange-200 cursor-pointer" />
-            <Linkedin size={16} className="hover:text-orange-200 cursor-pointer" />
-          </div>
+          
         </div>
       </div>
 
@@ -53,15 +49,12 @@ const Header = () => {
             <Link to="/" className="text-gray-700 hover:text-primary font-medium transition-colors">HOME</Link>
             <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors">ABOUT US</Link>
             <Link to="/services" className="text-gray-700 hover:text-primary font-medium transition-colors">SERVICES</Link>
-            <Link to="/blogs" className="text-gray-700 hover:text-primary font-medium transition-colors">BLOG</Link>
-            <Link to="/pricing" className="text-gray-700 hover:text-primary font-medium transition-colors">PRICING</Link>
-            <Link to="/faq" className="text-gray-700 hover:text-primary font-medium transition-colors">FAQ</Link>
             <a href="/contact" className="text-gray-700 hover:text-primary font-medium transition-colors">CONTACT</a>
           </nav>
 
           {/* Desktop Book Now Button */}
           <Button className="bg-primary hover:bg-orange-600 text-white px-4 md:px-6 py-2 rounded-md hidden md:block transition-colors">
-            Book Now →
+            <a href="/contact">Book Now</a>
           </Button>
 
           {/* Mobile Menu Button */}

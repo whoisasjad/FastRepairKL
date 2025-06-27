@@ -21,21 +21,13 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We pride ourselves on same-day repairs, original quality parts, and honest pricing. 
+              Whether it’s a broken screen, battery issue, software problem, or water damage, we’ve got you covered!
+
+
             </p>
-            <h4 className="text-lg font-semibold mb-4">Stay Connected</h4>
-            <div className="flex space-x-3">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-orange-600">
-                <Facebook size={16} />
-              </div>
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-orange-600">
-                <Twitter size={16} />
-              </div>
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-orange-600">
-                <Linkedin size={16} />
-              </div>
-            </div>
+            
+            
           </div>
 
           {/* Quick Links */}
@@ -45,9 +37,6 @@ const Footer = () => {
               <li><Link to="/" className="text-gray-400 hover:text-primary">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-primary">About Us</Link></li>
               <li><Link to="/services" className="text-gray-400 hover:text-primary">Services</Link></li>
-              <li><Link to="/blogs" className="text-gray-400 hover:text-primary">Blog</Link></li>
-              <li><Link to="/pricing" className="text-gray-400 hover:text-primary">Pricing</Link></li>
-              <li><Link to="/faq" className="text-gray-400 hover:text-primary">FAQ</Link></li>
               <li><a href="/contact" className="text-gray-400 hover:text-primary">Contact Us</a></li>
             </ul>
           </div>

@@ -64,14 +64,14 @@ const ContactSection = () => {
                 Send Us An Email
               </h3>
               <p className="text-gray-600 underline underline-offset-2">
-                support@fastrepairkl.com
+                crepair276@gmail.com
               </p>
             </div>
           </a>
 
           {/* Phone Card */}
           <a
-            href="tel:+60124357689"
+            href="tel:+60189621486"
             className="bg-white rounded-lg p-8 flex items-center space-x-4 hover:shadow-2xl transition-shadow group ring-primary/30 hover:ring-4 ring-0"
             style={{ textDecoration: "none" }}
             aria-label="Call us now"
@@ -84,7 +84,7 @@ const ContactSection = () => {
                 Give Us A Call
               </h3>
               <p className="text-gray-600 underline underline-offset-2">
-                +012 (435) 7689
+                +60 189621486
               </p>
             </div>
           </a>

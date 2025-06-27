@@ -51,41 +51,21 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              Restore Your{" "}
+              Mobile Repair in {" "}
               <span className="bg-primary text-white px-4 py-2 inline-block">
-                Broken
+              Kuala Lumpur
               </span>
               <br />
-              Gadgets To Life
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam quis nostrud
+              Welcome to fast repair, your go-to solution for quick, professional mobile repair services in Kuala Lumpur, Malaysia. With years of experience and thousands of happy customers, we specialize in fixing all major brands like iPhone, Samsung, Huawei, Oppo, Xiaomi, Vivo, and more
             </p>
             <div className="flex items-center space-x-4 relative">
-              <Button className="bg-primary hover:bg-orange-600 text-white px-8 py-3 text-lg relative z-20">
-                Get Started →
+              <Button className="bg-primary hover:bg-orange-600 text-white px-6 py-3 text-lg relative z-20">
+                <a href="/contact">Contact Us</a> 
               </Button>
               {/* Animated Play Button - now overlaps the Get Started button area */}
-              <div
-                className="absolute left-48 top-1/2 -translate-y-1/2 flex items-center justify-center z-10"
-                onClick={() => setShowVideo(true)}
-                style={{ cursor: "pointer" }}
-              >
-                {/* Animated ring */}
-                <span className="absolute inline-flex h-16 w-16 rounded-full bg-primary/20 animate-ping" />
-                <span className="absolute inline-flex h-16 w-16 rounded-full border-4 border-primary opacity-60" />
-                <div className="relative z-10 w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors shadow-lg">
-                  <svg
-                    className="w-7 h-7 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
+              
             </div>
 
             {/* Animated Sliding Logos Section */}
@@ -108,50 +88,17 @@ const HeroSection = () => {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+                src="/public/images/1.jpeg"
                 alt="Phone repair technician working"
                 className="rounded-lg shadow-xl w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                src="/public/images/2.jpeg"
                 alt="Person on phone - customer service"
                 className="rounded-lg shadow-xl w-full h-64 object-cover mt-8"
               />
             </div>
-            <div className="absolute -bottom-4 left-4 bg-primary text-white p-6 rounded-lg shadow-lg">
-              <div className="flex items-center space-x-3">
-                <div className="text-right">
-                  <div className="text-2xl font-bold">20+Work</div>
-                  <div className="text-sm">Happy Clients</div>
-                </div>
-                <div className="flex -space-x-2">
-                  {/* Insert real client avatars */}
-                  {clientAvatars.map((src, idx) => (
-                    <img
-                      key={idx}
-                      src={src}
-                      alt={`Client ${idx + 1}`}
-                      className="w-8 h-8 bg-white rounded-full border-2 border-primary object-cover"
-                    />
-                  ))}
-                </div>
-                <div className="w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
 

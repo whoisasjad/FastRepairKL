@@ -1,19 +1,20 @@
 const TeamSection = () => {
   const teamMembers = [
     {
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
-      name: "John Smith",
-      role: "Senior Technician",
+      image: "/public/images/team/Azeem.png",
+      name: "Abdul Azeem",
     },
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-      name: "Mike Johnson",
-      role: "Repair Specialist",
+      image: "/public/images/team/Aleem.png",
+      name: "Abdul Aleem",
     },
     {
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-      name: "David Wilson",
-      role: "Electronics Expert",
+      image: "/public/images/team/Qaseer.png",
+      name: "Malik Qasir",
+    },
+    {
+      image: "/public/images/team/Rehman.png",
+      name: "Abdul Rehman",
     },
   ];
 
@@ -88,7 +89,6 @@ const TeamSection = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-primary font-semibold">{member.role}</p>
               </div>
             </div>
           ))}

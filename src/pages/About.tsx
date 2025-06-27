@@ -4,30 +4,22 @@ import { CheckCircle, Shield, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const team = [
-  {
-    name: "John Smith",
-    role: "Senior Technician",
-    expertise: "8+ years experience in mobile repairs",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
-  },
-  {
-    name: "Mike Johnson",
-    role: "Repair Specialist",
-    expertise: "Specializes in water damage recovery",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-  },
-  {
-    name: "David Wilson",
-    role: "Electronics Expert",
-    expertise: "Expert in motherboard repairs",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-  },
-  {
-    name: "Emily Chen",
-    role: "Customer Success Lead",
-    expertise: "Ensures top-notch service quality",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9",
-  },
+   {
+      image: "/public/images/team/Azeem.png",
+      name: "Abdul Azeem",
+    },
+    {
+      image: "/public/images/team/Aleem.png",
+      name: "Abdul Aleem",
+    },
+    {
+      image: "/public/images/team/Qaseer.png",
+      name: "Malik Qasir",
+    },
+    {
+      image: "/public/images/team/Rehman.png",
+      name: "Abdul Rehman",
+    },
 ];
 
 const About = () => {
@@ -183,8 +175,6 @@ const About = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-primary font-semibold mb-1">{member.role}</p>
-                <p className="text-sm text-gray-500">{member.expertise}</p>
               </div>
             ))}
           </div>
