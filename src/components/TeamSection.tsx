@@ -1,19 +1,19 @@
 const TeamSection = () => {
   const teamMembers = [
     {
-      image: "/public/images/team/Azeem.png",
+      image: "/images/team/Azeem.png",
       name: "Abdul Azeem",
     },
     {
-      image: "/public/images/team/Aleem.png",
+      image: "/images/team/Aleem.png",
       name: "Abdul Aleem",
     },
     {
-      image: "/public/images/team/Qaseer.png",
+      image: "/images/team/Qaseer.png",
       name: "Malik Qasir",
     },
     {
-      image: "/public/images/team/Rehman.png",
+      image: "/images/team/Rehman.png",
       name: "Abdul Rehman",
     },
   ];

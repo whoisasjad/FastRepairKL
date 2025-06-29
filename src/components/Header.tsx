@@ -42,7 +42,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 md:space-x-3">
             <img
-              src="public/logo.png"
+              src="/logo.png"
               alt="Fast Repair Logo"
               className="w-32 h-auto object-contain"
               style={{ maxHeight: "48px" }}
@@ -110,11 +110,11 @@ const Header = () => {
                 <div className="flex flex-col space-y-3 mb-6 pb-6 border-b border-gray-200 sm:flex-row sm:space-y-0 sm:space-x-6">
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <Phone size={16} />
-                    <span>03-2123-4567</span>
+                    <span>+60 189621486</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
                     <Mail size={16} />
-                    <span>support@fastrepair.com</span>
+                    <span>crepair276@gmail.com</span>
                   </div>
                 </div>
 
@@ -141,27 +141,7 @@ const Header = () => {
                   >
                     SERVICES
                   </Link>
-                  <Link
-                    to="/blogs"
-                    className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    BLOG
-                  </Link>
-                  <Link
-                    to="/pricing"
-                    className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    PRICING
-                  </Link>
-                  <Link
-                    to="/faq"
-                    className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
-                    onClick={toggleMobileMenu}
-                  >
-                    FAQ
-                  </Link>
+
                   <a
                     href="/contact"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"

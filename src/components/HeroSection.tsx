@@ -109,12 +109,12 @@ const HeroSection = () => {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/public/images/1.jpeg"
+                src="/images/1.jpeg"
                 alt="Phone repair technician working"
                 className="rounded-lg shadow-xl w-full h-64 object-cover"
               />
               <img
-                src="/public/images/2.jpg"
+                src="/images/2.jpg"
                 alt="Person on phone - customer service"
                 className="rounded-lg shadow-xl w-full h-64 object-cover mt-8"
               />
@@ -134,7 +134,7 @@ const HeroSection = () => {
               </button>
               {/* Replace with your video source */}
               <video controls autoPlay className="w-full rounded">
-                <source src="public/0629.mp4" type="video/mp4" />
+                <source src="0629.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

@@ -4,22 +4,22 @@ import { CheckCircle, Shield, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const team = [
-   {
-      image: "/public/images/team/Azeem.png",
-      name: "Abdul Azeem",
-    },
-    {
-      image: "/public/images/team/Aleem.png",
-      name: "Abdul Aleem",
-    },
-    {
-      image: "/public/images/team/Qaseer.png",
-      name: "Malik Qasir",
-    },
-    {
-      image: "/public/images/team/Rehman.png",
-      name: "Abdul Rehman",
-    },
+  {
+    image: "/images/team/Azeem.png",
+    name: "Abdul Azeem",
+  },
+  {
+    image: "/images/team/Aleem.png",
+    name: "Abdul Aleem",
+  },
+  {
+    image: "/images/team/Qaseer.png",
+    name: "Malik Qasir",
+  },
+  {
+    image: "/images/team/Rehman.png",
+    name: "Abdul Rehman",
+  },
 ];
 
 const About = () => {
