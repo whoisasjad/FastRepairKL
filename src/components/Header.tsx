@@ -142,13 +142,13 @@ const Header = () => {
                     SERVICES
                   </Link>
 
-                  <a
-                    href="/contact"
+                 <Link
+                    to="/contact"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     CONTACT
-                  </a>
+                  </Link>
                 </nav>
 
                 {/* Mobile Book Now Button */}
