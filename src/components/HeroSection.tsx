@@ -134,7 +134,7 @@ const HeroSection = () => {
               </button>
               {/* Replace with your video source */}
               <video controls autoPlay className="w-full rounded">
-                <source src="0629.mp4" type="video/mp4" />
+                <source src="https://kpmgmpduybfjknfgcuxg.supabase.co/storage/v1/object/sign/as/0629.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kNmI5OTAyZC1lN2RmLTQyZjItOTRkOS1lYzAwNmNhYTc2NzYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcy8wNjI5Lm1wNCIsImlhdCI6MTc1MTIyNTgyMCwiZXhwIjoxOTA4OTA1ODIwfQ.3jVoVtPoDutcA-fM-mcMBybW-vyKFwyy4LrVAg8DW7Y" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
