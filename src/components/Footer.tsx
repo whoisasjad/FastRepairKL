@@ -40,22 +40,21 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <Phone className="text-white" size={20} />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">FAST REPAIR</h3>
-                <p className="text-sm text-gray-400">GADGET REPAIR SERVICES</p>
-              </div>
-            </div>
-            <p className="text-gray-400 mb-6">
-              We pride ourselves on same-day repairs, original quality parts,
-              and honest pricing. Whether it’s a broken screen, battery issue,
-              software problem, or water damage, we’ve got you covered!
-            </p>
-          </div>
+         <div>
+  <div className="flex items-center space-x-3 mb-6">
+    <img
+      src="/logo.png"
+      alt="Fast Repair Logo"
+      className="w-32 h-auto object-contain"
+      style={{ maxHeight: "48px" }}
+    />
+  </div>
+  <p className="text-gray-400 mb-6">
+    We pride ourselves on same-day repairs, original quality parts,
+    and honest pricing. Whether it’s a broken screen, battery issue,
+    software problem, or water damage, we’ve got you covered!
+  </p>
+</div>
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
