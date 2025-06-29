@@ -44,18 +44,33 @@ const ServiceDetail = () => {
   const [error, setError] = useState<string | null>(null);
 
   const serviceNames: { [key: string]: string } = {
-    "smartphone-repair": "Smartphone Repair",
-    "laptop-repair": "Laptop Repair",
-    "tablet-repair": "Tablet Repair",
+    "iphone-samsung-back-glass-repair": "Back Glass Repair",
+    "iphone-samsung-glass-repair": "Glass Repair",
+    "iphone-android-motherboard-repair": "Motherboard Repair",
+    "water-damage-repair": "Water Damage Repair",
+    "wifi-issues": "Wi-Fi Issues Repair",
+    "network-issues": "Network Issues Repair",
+    "charging-issues": "Charging Issues Repair",
+    "battery-replacement": "Battery Replacement",
+    "body-changing": "Body Changing",
+    "power-volume-button-issue": "Power and Volume Button Issue",
+    "camera-issue": "Camera Issue",
+    "speaker-mic-issue": "Speaker and Microphone Issue",
   };
 
   const serviceImages: { [key: string]: string } = {
-    "smartphone-repair":
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    "laptop-repair":
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    "tablet-repair":
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "iphone-samsung-back-glass-repair": "../images/4.jpg",
+    "iphone-samsung-glass-repair": "../images/2.jpg",
+    "iphone-android-motherboard-repair": "../images/6.jpg", // Assuming image 1 for motherboard repair
+    "water-damage-repair": "../images/7.jpeg",
+    "wifi-issues": "../images/18.jpg", // Placeholder, assuming next available number
+    "network-issues": "../images/19.jpg", // Placeholder
+    "charging-issues": "../images/20.jpg", // Placeholder
+    "battery-replacement": "../images/14.jpg", // Placeholder
+    "body-changing": "../images/12.jpg", // Placeholder
+    "power-volume-button-issue": "../images/22.jpg", // Placeholder
+    "camera-issue": "../images/23.jpg", // Placeholder
+    "speaker-mic-issue": "../images/21.jpg", // Placeholder
   };
 
   useEffect(() => {
@@ -230,18 +245,18 @@ const ServiceDetail = () => {
                   <Phone className="w-5 h-5" />
                   <div>
                     <p className="font-semibold">Call Now</p>
-                    <p className="text-orange-100">03-2123-4567</p>
+                    <p className="text-orange-100">+60 189621486</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5" />
                   <div>
                     <p className="font-semibold">Email Us</p>
-                    <p className="text-orange-100">support@fastrepair.com</p>
+                    <p className="text-orange-100">crepair276@gmail.com</p>
                   </div>
                 </div>
                 <Button className="w-full bg-white text-primary font-bold hover:bg-gray-100 mt-4 rounded-lg shadow">
-                  Book Appointment
+                  <a href="/contact">Book Now</a>
                 </Button>
               </CardContent>
             </Card>
@@ -256,7 +271,7 @@ const ServiceDetail = () => {
                 <div className="grid grid-cols-2 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden relative border border-gray-200">
                     <img
-                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                      src="https://i.ytimg.com/vi/KgZV_HTyzwM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDGwpRp9gua4PHJLA5h5B3J-P4Bfw"
                       alt="Before repair"
                       className="w-full h-full object-cover"
                     />
@@ -266,7 +281,7 @@ const ServiceDetail = () => {
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden relative border border-gray-200">
                     <img
-                      src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                      src="data:image/jpeg;base64,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"
                       alt="After repair"
                       className="w-full h-full object-cover"
                     />

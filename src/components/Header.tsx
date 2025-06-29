@@ -1,5 +1,12 @@
-
-import { Phone, Mail, Facebook, Twitter, Linkedin, Menu, X } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Menu,
+  X,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -26,7 +33,6 @@ const Header = () => {
               <span>crepair276@gmail.com</span>
             </div>
           </div>
-          
         </div>
       </div>
 
@@ -35,21 +41,40 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 md:space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center">
-              <Phone className="text-white" size={20} />
-            </div>
-            <div>
-              <h1 className="text-lg md:text-2xl font-bold text-gray-800">FAST REPAIR</h1>
-              <p className="text-xs md:text-sm text-gray-600 hidden sm:block">GADGET REPAIR SERVICES</p>
-            </div>
+            <img
+              src="public/logo.png"
+              alt="Fast Repair Logo"
+              className="w-32 h-auto object-contain"
+              style={{ maxHeight: "48px" }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-primary font-medium transition-colors">HOME</Link>
-            <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors">ABOUT US</Link>
-            <Link to="/services" className="text-gray-700 hover:text-primary font-medium transition-colors">SERVICES</Link>
-            <a href="/contact" className="text-gray-700 hover:text-primary font-medium transition-colors">CONTACT</a>
+            <Link
+              to="/"
+              className="text-gray-700 hover:text-primary font-medium transition-colors"
+            >
+              HOME
+            </Link>
+            <Link
+              to="/about"
+              className="text-gray-700 hover:text-primary font-medium transition-colors"
+            >
+              ABOUT US
+            </Link>
+            <Link
+              to="/services"
+              className="text-gray-700 hover:text-primary font-medium transition-colors"
+            >
+              SERVICES
+            </Link>
+            <a
+              href="/contact"
+              className="text-gray-700 hover:text-primary font-medium transition-colors"
+            >
+              CONTACT
+            </a>
           </nav>
 
           {/* Desktop Book Now Button */}
@@ -73,11 +98,11 @@ const Header = () => {
         {isMobileMenuOpen && (
           <>
             {/* Overlay */}
-            <div 
+            <div
               className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
               onClick={toggleMobileMenu}
             />
-            
+
             {/* Mobile Menu Panel */}
             <div className="absolute top-full left-0 right-0 bg-white shadow-lg z-50 lg:hidden border-t">
               <div className="container mx-auto px-4 py-4">
@@ -95,50 +120,50 @@ const Header = () => {
 
                 {/* Navigation Links */}
                 <nav className="flex flex-col space-y-4 mb-6">
-                  <Link 
-                    to="/" 
+                  <Link
+                    to="/"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     HOME
                   </Link>
-                  <Link 
-                    to="/about" 
+                  <Link
+                    to="/about"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     ABOUT US
                   </Link>
-                  <Link 
-                    to="/services" 
+                  <Link
+                    to="/services"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     SERVICES
                   </Link>
-                  <Link 
-                    to="/blogs" 
+                  <Link
+                    to="/blogs"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     BLOG
                   </Link>
-                  <Link 
-                    to="/pricing" 
+                  <Link
+                    to="/pricing"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     PRICING
                   </Link>
-                  <Link 
-                    to="/faq" 
+                  <Link
+                    to="/faq"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
                     FAQ
                   </Link>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact"
                     className="text-gray-700 hover:text-primary font-medium py-2 border-b border-gray-100 transition-colors"
                     onClick={toggleMobileMenu}
                   >
@@ -147,7 +172,7 @@ const Header = () => {
                 </nav>
 
                 {/* Mobile Book Now Button */}
-                <Button 
+                <Button
                   className="w-full bg-primary hover:bg-orange-600 text-white py-3 rounded-md transition-colors"
                   onClick={toggleMobileMenu}
                 >
@@ -156,9 +181,18 @@ const Header = () => {
 
                 {/* Social Links for Mobile */}
                 <div className="flex items-center justify-center space-x-4 mt-6 pt-6 border-t border-gray-200">
-                  <Facebook size={20} className="text-gray-600 hover:text-primary cursor-pointer transition-colors" />
-                  <Twitter size={20} className="text-gray-600 hover:text-primary cursor-pointer transition-colors" />
-                  <Linkedin size={20} className="text-gray-600 hover:text-primary cursor-pointer transition-colors" />
+                  <Facebook
+                    size={20}
+                    className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+                  />
+                  <Twitter
+                    size={20}
+                    className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+                  />
+                  <Linkedin
+                    size={20}
+                    className="text-gray-600 hover:text-primary cursor-pointer transition-colors"
+                  />
                 </div>
               </div>
             </div>

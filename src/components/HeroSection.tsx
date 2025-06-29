@@ -51,21 +51,42 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              Mobile Repair in {" "}
+              Mobile Repair in{" "}
               <span className="bg-primary text-white px-4 py-2 inline-block">
-              Kuala Lumpur
+                Kuala Lumpur
               </span>
               <br />
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-xl">
-              Welcome to fast repair, your go-to solution for quick, professional mobile repair services in Kuala Lumpur, Malaysia. With years of experience and thousands of happy customers, we specialize in fixing all major brands like iPhone, Samsung, Huawei, Oppo, Xiaomi, Vivo, and more
+              Welcome to fast repair, your go-to solution for quick,
+              professional mobile repair services in Kuala Lumpur, Malaysia.
+              With years of experience and thousands of happy customers, we
+              specialize in fixing all major brands like iPhone, Samsung,
+              Huawei, Oppo, Xiaomi, Vivo, and more
             </p>
             <div className="flex items-center space-x-4 relative">
               <Button className="bg-primary hover:bg-orange-600 text-white px-6 py-3 text-lg relative z-20">
-                <a href="/contact">Contact Us</a> 
+                <a href="/contact">Contact Us</a>
               </Button>
               {/* Animated Play Button - now overlaps the Get Started button area */}
-              
+              <div
+                className="absolute left-48 top-1/2 -translate-y-1/2 flex items-center justify-center z-10"
+                onClick={() => setShowVideo(true)}
+                style={{ cursor: "pointer" }}
+              >
+                {/* Animated ring */}
+                <span className="absolute inline-flex h-16 w-16 rounded-full bg-primary/20 animate-ping" />
+                <span className="absolute inline-flex h-16 w-16 rounded-full border-4 border-primary opacity-60" />
+                <div className="relative z-10 w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors shadow-lg">
+                  <svg
+                    className="w-7 h-7 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
             </div>
 
             {/* Animated Sliding Logos Section */}
@@ -93,12 +114,11 @@ const HeroSection = () => {
                 className="rounded-lg shadow-xl w-full h-64 object-cover"
               />
               <img
-                src="/public/images/2.jpeg"
+                src="/public/images/2.jpg"
                 alt="Person on phone - customer service"
                 className="rounded-lg shadow-xl w-full h-64 object-cover mt-8"
               />
             </div>
-            
           </div>
         </div>
 
@@ -114,7 +134,7 @@ const HeroSection = () => {
               </button>
               {/* Replace with your video source */}
               <video controls autoPlay className="w-full rounded">
-                <source src="/demo-video.mp4" type="video/mp4" />
+                <source src="public/0629.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

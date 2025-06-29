@@ -45,9 +45,23 @@ export const discoverContent = async (type: 'blogs' | 'services'): Promise<Conte
       'water-damage-recovery-guide'
     ],
     services: [
-      'smartphone-repair',
-      'laptop-repair',
-      'tablet-repair'
+      'iphone-samsung-back-glass-repair',
+      'iphone-samsung-glass-repair',
+      'water-damage-repair',
+      'wifi-issues',
+      'iphone-android-motherboard-repair',
+      'network-issues',
+      'charging-issues',
+ 'battery-replacement',
+   'body-changing',
+ 'power-volume-button-issue',
+    'camera-issue',
+'speaker-mic-issue'
+
+   
+
+    
+    
     ]
   };
   
@@ -58,9 +72,18 @@ export const discoverContent = async (type: 'blogs' | 'services'): Promise<Conte
       'water-damage-recovery-guide': 'https://images.unsplash.com/photo-1563203369-26f2e4a5cf38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'
     },
     services: {
-      'smartphone-repair': 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      'laptop-repair': 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      'tablet-repair': 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'
+      "iphone-samsung-back-glass-repair": "../images/4.jpg",
+    "iphone-samsung-glass-repair": "../images/2.jpg",
+    "iphone-android-motherboard-repair": "../images/6.jpg", // Assuming image 1 for motherboard repair
+    "water-damage-repair": "../images/7.jpeg",
+    "wifi-issues": "../images/18.jpg", // Placeholder, assuming next available number
+    "network-issues": "../images/19.jpg", // Placeholder
+    "charging-issues": "../images/20.jpg", // Placeholder
+    "battery-replacement": "../images/14.jpg", // Placeholder
+    "body-changing": "../images/12.jpg", // Placeholder
+    "power-volume-button-issue": "../images/22.jpg", // Placeholder
+    "camera-issue": "../images/23.jpg", // Placeholder
+    "speaker-mic-issue": "../images/21.jpg" // Placeholder
     }
   };
   
